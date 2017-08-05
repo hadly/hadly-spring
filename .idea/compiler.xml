@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="chapter4" />
+        <module name="common-test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="chapter4" target="1.5" />
+      <module name="common-test" target="1.5" />
       <module name="hadly-spring" target="1.5" />
     </bytecodeTargetLevel>
   </component>

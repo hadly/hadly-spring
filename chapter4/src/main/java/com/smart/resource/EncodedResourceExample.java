@@ -7,10 +7,9 @@ import org.springframework.util.FileCopyUtils;
 public class EncodedResourceExample {
 
 	  public static void main(String[] args) throws Throwable  {
-		  Resource res = new ClassPathResource("conf/file1.txt");
+		  Resource res = new ClassPathResource("conf/file3.txt");
 		  EncodedResource encRes = new EncodedResource(res,"UTF-8");
 		  String content  = FileCopyUtils.copyToString(encRes.getReader());
-		  System.out.println(content);  
+		  System.out.println("result=" + content);
 	}
-
 }

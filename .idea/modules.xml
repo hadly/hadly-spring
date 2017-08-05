@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/chapter4/chapter4.iml" filepath="$PROJECT_DIR$/chapter4/chapter4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-test/common-test.iml" filepath="$PROJECT_DIR$/common-test/common-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/hadly-spring.iml" filepath="$PROJECT_DIR$/hadly-spring.iml" />
     </modules>
   </component>

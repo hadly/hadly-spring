@@ -12,9 +12,10 @@ public class FileSourceExample {
 	
 	public static void main(String[] args) {
 		try {
-			String filePath = "D:/masterSpring/code/chapter4/src/main/resources/conf/file1.txt";
+			String filePath = "file1.txt";
+
 			WritableResource res1 = new PathResource(filePath);
-			Resource res2 = new ClassPathResource("conf/file1.txt");
+			Resource res2 = new ClassPathResource("conf/file2.txt");
 
 			OutputStream stream1 = res1.getOutputStream();
 			stream1.write("欢迎光临\n小春论坛".getBytes());
@@ -30,8 +31,8 @@ public class FileSourceExample {
 			}
 			System.out.println(baos.toString());
 
-            System.out.println("res1:"+res1.getFilename());
-            System.out.println("res2:"+res2.getFilename());            
+            System.out.println("res1:"+res1.getFile().getAbsolutePath());
+            System.out.println("res2:"+res2.getFile().getAbsolutePath());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
